@@ -2,19 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Genre</title>
+    <title>Show</title>
 </head>
 <body>
 <div>
     <ul>
-        {% for i in genre %}
+        {% for i in shows %}
         <li>
-            <h2><a href="/book/{{ i.id }}">{{ i.title }}</a></h2>
+            <h2><a href="/shows/{{ i.id }}">{{ i.title }}</a></h2>
             <p>{{ i.genre }}</p>
         </li>
         {% endfor %}
     </ul>
 </div>
-
 </body>
 </html>

@@ -1,7 +1,8 @@
 from django.db import models
 
 
-class Genre(models.Model):
+
+class TVShow(models.Model):
     GENRE_CHOICE = (
         ('Detective', 'Detective'),
         ('Comedy', 'Comedy'),
@@ -15,4 +16,4 @@ class Genre(models.Model):
     image = models.ImageField(upload_to='')
     quantity = models.IntegerField()
     genre = models.CharField(choices=GENRE_CHOICE, max_length=100)
-    date_publication = models.DateField()
+    date_filmed = models.DateField()
