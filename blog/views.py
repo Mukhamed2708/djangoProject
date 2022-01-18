@@ -6,6 +6,6 @@ def hello_world(request):
     return HttpResponse('Hello World')
 
 
-def blog_all(reqeuest):
+def blog_all(request):
     post = models.Post.objects.all()
-    return render(reqeuest, 'post_list.html', {'post': post})
+    return render(request, 'post_list.html', {'post': post})
