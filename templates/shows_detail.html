@@ -13,5 +13,7 @@
     <p>{{ show.genre }}</p>
     <p>{{ show.date_filmed }}</p>
 </div>
+<button type="button" class="btn btn-primary"><a href="/shows/{{show.id}}/update/">Change</a></button>
+<button type="button" class="btn btn-primary"><a href="/shows/{{ show.id }}/delete/">Delete {{ show.title }}</a></button>
 </body>
 </html>

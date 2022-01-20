@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Book</title>
+    <title>Genre</title>
 </head>
 <body>
 <div>
@@ -13,5 +13,7 @@
     <p>{{ genre.genre }}</p>
     <p>{{ genre.date_publication }}</p>
 </div>
+<button type="button" class="btn btn-primary"><a href="/genres/{{genre.id}}/update/">Change</a></button>
+<button type="button" class="btn btn-primary"><a href="/genres/{{ genre.id }}/delete/">Delete {{ genre.title }}</a></button>
 </body>
 </html>
